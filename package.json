@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-decoupled-document",
+  "name": "@omretterry/ckeditor5-build-decoupled-document-imageresize",
   "version": "12.4.0",
-  "description": "The document editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "description": "The document editor build of CKEditor 5 – the best browser-based rich text editor.(add image resize)",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -69,7 +69,7 @@
   "bugs": "https://github.com/ckeditor/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-decoupled-document.git"
+    "url": "https://github.com/omretterry/ckeditor5-build-decoupled-document"
   },
   "scripts": {
     "build": "webpack --mode production",
