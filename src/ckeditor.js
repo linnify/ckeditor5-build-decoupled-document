@@ -33,6 +33,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -64,7 +65,8 @@ DecoupledEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	ImageResize
 ];
 
 // Editor configuration.
@@ -79,7 +81,6 @@ DecoupledEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline',
-			'strikethrough',
 			'highlight',
 			'|',
 			'alignment',
@@ -87,11 +88,7 @@ DecoupledEditor.defaultConfig = {
 			'numberedList',
 			'bulletedList',
 			'|',
-			'link',
-			'blockquote',
 			'imageUpload',
-			'insertTable',
-			'mediaEmbed',
 			'|',
 			'undo',
 			'redo'
@@ -109,7 +106,8 @@ DecoupledEditor.defaultConfig = {
 			'imageStyle:alignRight',
 			'|',
 			'imageTextAlternative'
-		]
+		],
+		resizeUnit: 'px'
 	},
 	table: {
 		contentToolbar: [
