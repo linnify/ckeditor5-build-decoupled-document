@@ -98,7 +98,9 @@ DecoupledEditor.defaultConfig = {
 		styles: [
 			'full',
 			'alignLeft',
-			'alignRight'
+			'alignRight',
+			'alignCenter',
+			'side'
 		],
 		toolbar: [
 			'imageStyle:alignLeft',
